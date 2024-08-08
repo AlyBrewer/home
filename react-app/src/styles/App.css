@@ -1,4 +1,6 @@
 /* src/styles/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 :root {
   --prim: #AEA434;
   --seco: #ED583F;
@@ -6,6 +8,7 @@
 }
 
 html, body {
+  font-family: "Space Grotesk", sans-serif;
   height: 100%;
   margin: 0;
 }
@@ -62,6 +65,8 @@ main {
   font-size: 1.5rem;
   border-radius: 4px;
   text-decoration: none; 
+  font-weight: bolder;
+  font-style: italic;
 }
 
 .logo:hover {

@@ -3,8 +3,8 @@ import React from 'react';
 import '../styles/App.css';
 
 const Home = () => (
-    <main class="Home">
-            <p>Main content goes here</p>
+    <main class="main">
+            <p>Hey! My name is Alyssa</p>
     </main>
 
 );
