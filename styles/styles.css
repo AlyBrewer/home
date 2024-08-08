@@ -28,6 +28,39 @@ body {
     text-align: left;
 }
 
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-button {
+    color: var(--back);
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--prim); /* Darker shade for buttons */
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: var(--seco); /* Even darker shade for hover effect */
+}
+
+.logo {
+    background: none;
+    border: none;
+    color:  var(--back);
+    font-size: 1.5rem;
+     border-radius: 4px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    background: none;
+    color: var(--seco); /* Even darker shade for hover effect */
+}
+
 .content {
     flex: 1; /* Makes the content area flexible and pushes footer down */
     padding: 20px;

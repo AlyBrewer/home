@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alyssa Brewer</title>
     <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <h1>Alyssa Brewer</h1>
+            <div class="header-content">
+                <button class="logo">Alyssa Brewer</button>
+                <nav class="nav">
+                    <a class="nav-button" href="#" onclick="loadPage('about')">About</a>
+                    <a class="nav-button" href="#" onclick="loadPage('contact')">Contact</a>
+                    <a class="nav-button" href="#" onclick="loadPage('projects')">Projects</a>
+                </nav>
+            </div>
         </header>
+        
         <main class="content">
-            <p>Main content goes here. This area will grow as needed, pushing the footer down.</p>
+            <p>Main content goes here</p>
         </main>
         <footer class="footer">
             <p>Alyssa Brewer © 2024</p>
         </footer>
     </div>
 
-    <script src="scripts/script.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
