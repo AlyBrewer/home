@@ -1,0 +1,75 @@
+/* src/styles/App.css */
+:root {
+  --prim: #AEA434;
+  --seco: #ED583F;
+  --back: #EDDBC2;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the wrapper covers at least the full viewport height */
+}
+
+main {
+  flex: 1; /* This allows the main content area to grow and push the footer down */
+  padding: 20px;
+  background-color: var(--back);
+}
+
+.header {
+  background-color: var(--prim);
+  color: var(--back);
+  padding: 20px;
+  text-align: left;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-button {
+  color: var(--back);
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: var(--prim);
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: var(--seco);
+}
+
+.logo {
+  background: none;
+  border: none;
+  color: var(--back);
+  font-size: 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  background: none;
+  color: var(--seco);
+}
+
+.footer {
+  background-color: var(--seco);
+  color: var(--back);
+  text-align: left;
+  padding: 10px;
+}
