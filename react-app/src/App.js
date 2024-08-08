@@ -1,6 +1,5 @@
 // src/App.js
 
-import logo from './logo.svg';
 import './styles/App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -12,7 +11,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="wrapper"> {/* Apply the wrapper class */}
+    <div className="wrapper"> 
       <Router>
         <Header />
         <main>

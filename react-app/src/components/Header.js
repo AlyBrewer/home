@@ -6,7 +6,7 @@ import '../styles/App.css';
 const Header = () => (
     <header className="header">
         <div className="header-content">
-            <button className="logo">Alyssa Brewer</button>
+            <Link to="/" className="logo">Alyssa Brewer</Link>
             <nav className="nav">
                 <Link className="nav-button" to="/">Home</Link>
                 <Link className="nav-button" to="/about">About</Link>

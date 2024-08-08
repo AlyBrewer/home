@@ -43,14 +43,16 @@ main {
 .nav-button {
   color: var(--back);
   text-decoration: none;
-  padding: 10px 20px;
-  background-color: var(--prim);
+  padding: 15px ;
+  background-color: var(--seco);
   border-radius: 4px;
+  margin-right: 10px;
   transition: background-color 0.3s;
 }
 
 .nav-button:hover {
-  background-color: var(--seco);
+  background-color: var(--back);
+  color: var(--seco);
 }
 
 .logo {
@@ -59,7 +61,7 @@ main {
   color: var(--back);
   font-size: 1.5rem;
   border-radius: 4px;
-  cursor: pointer;
+  text-decoration: none; 
 }
 
 .logo:hover {
@@ -68,7 +70,7 @@ main {
 }
 
 .footer {
-  background-color: var(--seco);
+  background-color: var(--prim);
   color: var(--back);
   text-align: left;
   padding: 10px;

@@ -4,7 +4,6 @@ import '../styles/App.css';
 
 const About = () => (
     <div>
-        <h1>About Page</h1>
         <p>Welcome to the about page!</p>
     </div>
 );
