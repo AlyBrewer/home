@@ -80,3 +80,53 @@ main {
   text-align: left;
   padding: 10px;
 }
+
+.card {
+  background-color: var(--back);
+  padding: 20px;
+  padding-top: 5px;
+  border-radius: 8px;
+  border-style: dashed;
+  border-color: var(--seco);
+  margin-top: 10px;
+  max-width: 1000px; 
+}
+
+.card h3 {
+  color: var(--prim);
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  border-bottom: 2px solid var(--prim);
+  padding-bottom: 10px;
+}
+
+.card-item {
+  margin-bottom: 20px;
+}
+
+.card-item h4 {
+  color: var(--prim);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-item .date {
+  font-size: 1rem;
+  color: var(--seco);
+  font-style: italic;
+}
+
+.card-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.card-item ul li {
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}

@@ -6,8 +6,6 @@
     padding: 20px;
     background-color: var(--prim);
     border-radius: 8px;
-    border-style: dashed;
-    border-color: var(--seco);
 }
 
 .form-group {

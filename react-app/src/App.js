@@ -12,7 +12,7 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className="wrapper"> 
-      <Router>
+      <Router basename="/Portfolio">
         <Header />
         <main>
           <Routes>
