@@ -1,5 +1,5 @@
-// src/components/ContactForm.js
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com'; // Import EmailJS
 import '../styles/ContactForm.css';
 
 function ContactForm() {
@@ -8,6 +8,7 @@ function ContactForm() {
         email: '',
         message: '',
     });
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = (e) => {
         setFormData({
@@ -18,8 +19,21 @@ function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`Form submitted!\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
-        // Here you would typically send the form data to a backend or email service
+        setIsSubmitting(true);
+        emailjs.send('service_555pobi', 'contact_form', formData, 'XbvHB_ZQEvpO8lCwL')
+            .then((response) => {
+                alert('Message sent successfully!');
+                setFormData({
+                    name: '',
+                    email: '',
+                    message: '',
+                });
+                setIsSubmitting(false);
+            }, (err) => {
+                alert('Failed to send the message. Please try again.');
+                console.error('EmailJS error:', err);
+                setIsSubmitting(false);
+            });
     };
 
     return (
@@ -56,7 +70,9 @@ function ContactForm() {
                     required 
                 ></textarea>
             </div>
-            <button type="submit" className="submit-button">Send</button>
+            <button type="submit" className="submit-button" disabled={isSubmitting}>
+                {isSubmitting ? 'Sending...' : 'Send'}
+            </button>
         </form>
     );
 }
