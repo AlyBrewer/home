@@ -3,7 +3,7 @@ import React from 'react';
 import '../styles/App.css';
 
 const Footer = () => (
-    <footer class="footer">
+    <footer className="footer">
                 <p>Alyssa Brewer © 2024</p>
     </footer>
 

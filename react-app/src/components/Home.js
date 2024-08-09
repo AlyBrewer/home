@@ -3,7 +3,7 @@ import React from 'react';
 import '../styles/App.css';
 
 const Home = () => (
-    <main class="main">
+    <main className="main">
             <h3>Hey! My name is Alyssa</h3>
             <div className="card">
                 <h3>Experience</h3>
@@ -45,7 +45,7 @@ const Home = () => (
                 </ul>
                 </div>
             </div>
-
+            <h3>To see more projects, checkout my GitHub <a href="https://github.com/AlyBrewer?tab=repositories">here</a>!</h3>
 
     </main>
 

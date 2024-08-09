@@ -18,6 +18,18 @@ body {
   flex-direction: column;
 }
 
+body::-webkit-scrollbar{
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track{
+  background: var(--prim);
+}
+
+body::-webkit-scrollbar-thumb{
+  background: var(--seco);
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
