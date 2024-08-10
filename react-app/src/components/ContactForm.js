@@ -20,9 +20,11 @@ function ContactForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsSubmitting(true);
-        emailjs.send('service_555pobi', 'contact_form', formData, 'XbvHB_ZQEvpO8lCwL')
+        console.log('Sending formData:', formData); // Debug log
+        emailjs.init('XbvHB_ZQEvpO8lCwL')
+        emailjs.send('service_555pobi', 'contact_form', formData)
             .then((response) => {
-                alert('Message sent successfully!');
+                alert('Message sent!');
                 setFormData({
                     name: '',
                     email: '',
