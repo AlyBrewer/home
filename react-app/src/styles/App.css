@@ -55,20 +55,77 @@ main {
   align-items: center;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure padding and border are included in width calculations */
+.nav-button,
+.dropdown-content {
+  box-sizing: border-box;
+  
+}
+
 .nav-button {
   color: var(--back);
+  text-align: center;
   text-decoration: none;
   padding: 15px ;
   background-color: var(--seco);
   border-radius: 4px;
   margin-right: 10px;
   transition: background-color 0.3s;
+  min-width: 95px;
+  position: relative;
+  display: inline-block;
+  width: auto;
 }
 
 .nav-button:hover {
   background-color: var(--back);
   color: var(--seco);
 }
+
+/* Dropdown Wrapper */
+.nav-button-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 90%;
+  background-color: var(--seco);
+  min-width: 70px; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.dropdown-content a {
+  color: var(--back);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--back);
+  color: var(--seco);
+}
+
+/* Show dropdown on hover */
+.nav-button-wrapper:hover .dropdown-content {
+  display: block;
+}
+
 
 .logo {
   background: none;

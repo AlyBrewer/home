@@ -9,8 +9,18 @@ const Header = () => (
             <Link to="/" className="logo">Alyssa Brewer</Link>
             <nav className="nav">
                 <Link className="nav-button" to="/">Home</Link>
+                
+                {/* Dropdown Button and Content */}
+                <div className="nav-button-wrapper">
+                    <Link className="nav-button" to="/blog">Blog</Link>
+                    <div className="dropdown-content">
+                        <Link to="/blog/projects">Projects</Link>
+                    </div>
+                </div>
+
                 <Link className="nav-button" to="/about">About</Link>
                 <Link className="nav-button" to="/contact">Contact</Link>
+                
             </nav>
         </div>
     </header>
