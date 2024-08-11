@@ -15,6 +15,8 @@ const Header = () => (
                     <Link className="nav-button" to="/blog">Blog</Link>
                     <div className="dropdown-content">
                         <Link to="/blog/projects">Projects</Link>
+                        <Link to="/blog/photos">Photos</Link>
+                        <Link to="/blog/other">Other</Link>
                     </div>
                 </div>
 

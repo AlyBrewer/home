@@ -1,0 +1,40 @@
+.blog-wrap{
+    display: flex;
+    flex-direction: column; /* Use column to align items vertically */
+    justify-content:space-evenly;
+}
+
+.blog-wrap h3{
+    border-radius: 10px;
+    border-style: dotted;
+    border-color: var(--prim);
+    text-align: center;
+    color: var(--seco);
+}
+
+.blog-nav {
+    display: flex;
+    flex-direction: column; /* Use column to align items vertically */
+    justify-content:space-evenly;
+    height: 45vh;
+    max-width: 15%;
+  }
+
+.blog-button {
+    color: var(--back);
+    text-align: center;
+    text-decoration: none;
+    padding: 15px ;
+    background-color: var(--prim);
+    border-style: dashed;
+    border-color: var(--seco);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    position: relative;
+    display: inline-block;
+  }
+
+  .blog-button:hover {
+    background-color: var(--seco);
+    color: var(--back);
+  }

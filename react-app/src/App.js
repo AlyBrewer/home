@@ -10,6 +10,8 @@ import About from './components/About';
 import Contact from './components/Contact'; 
 import Blog from './blog/Blog'; 
 import Projects from './blog/Projects'; 
+import Photos from './blog/Photos'; 
+import Other from './blog/Other'; 
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/projects" element={<Projects />} />
+            <Route path="/blog/photos" element={<Photos />} />
+            <Route path="/blog/other" element={<Other />} />
           </Routes>
         </main>
         <Footer />
