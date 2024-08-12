@@ -6,15 +6,17 @@ import './blog_styles.css';
 
 const Blog = () => (
     <main className="main">
-        <h1>My Blog!</h1>
-        <div className='blog-wrap'>
+        <div className='main-title'>
+            <h1>My Blog!</h1>
+        </div>
             <nav className="blog-nav">
-                <h3>Topics</h3>
+                <div className='main-subtitle'>
+                    <h3>Topics</h3>
+                </div>
                 <Link className="blog-button" to="/blog/projects">Projects</Link>
                 <Link className="blog-button" to="/blog/photos">Photography</Link>
                 <Link className="blog-button" to="/blog/other">Other</Link>
             </nav>
-        </div>
     </main>
 );
 

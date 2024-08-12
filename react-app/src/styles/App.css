@@ -40,21 +40,52 @@ body::-webkit-scrollbar-thumb{
 
 main {
   flex: 1; /* This allows the main content area to push the footer down */
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 30px;
   background-color: var(--back);
   color: var(--dark);
 }
 
 main h1{
-  display: inline-block; 
-  padding: 5px;
+  display:inherit; 
+  border-color: var(--prim);
+  margin: 0;
+  padding: 0;
+}
+
+.main-title{
+  display: inline-block;
+  border-style: dashed;
+  border-color: var(--seco);
+  border-radius: 10px;
+  padding: 5px; /* Space between the wrapper's border and the heading */
+  margin: 0; /* Ensure the wrapper has no margin outside */
+}
+
+.main-subtitle{
+  display:inline-block;
   border-radius: 10px;
   border-style: dotted;
   border-color: var(--prim);
+  padding: 5px;
+  color: var(--seco);
+}
+
+
+main h3{
+  display: inherit;
+  text-align: center;
+  color: var(--seco);
+  margin: 0;
+  padding: 0;
+}
+
+main h5{
+  margin: none;
 }
 
 main p{
-  margin-bottom: 30px;
+  font-size: medium;
 }
 
 .header {
@@ -78,7 +109,6 @@ main p{
 .nav-button,
 .dropdown-content {
   box-sizing: border-box;
-  
 }
 
 .nav-button {
@@ -168,53 +198,75 @@ main p{
   padding: 10px;
 }
 
+/* Formatting for resume stuff */
 .card {
-  background-color: var(--back);
-  padding: 20px;
-  padding-top: 5px;
+  background: none;
+  margin-top: 20px;
+  margin-bottom: 5px;
   border-radius: 8px;
   border-style: dashed;
   border-color: var(--seco);
-  margin-top: 10px;
   max-width: 1000px; 
 }
 
+.card-content {
+  padding: 3%; /* Space between the wrapper's border and the heading */
+  margin: 0; /* Ensure the wrapper has no margin outside */
+}
+
+.card h1 {
+  color: var(--prim);
+  border-bottom: 2px solid var(--prim);
+  text-align: left;
+  align-items: center;
+  font-size: 2rem;
+
+  flex: 0 1 10%; /* Allow each container to grow/shrink, but set max height to 30% */
+  max-height: 10%;
+  margin-bottom: 10px; 
+}
+
 .card h3 {
+  font-size: 1.5rem;
   color: var(--prim);
   text-align: left;
-  margin-bottom: 20px;
-  font-size: 2rem;
-  border-bottom: 2px solid var(--prim);
-  padding-bottom: 10px;
-}
-
-/* Formatting for resume stuff */
-.card-item {
-  margin-bottom: 20px;
-}
-
-.card-item h4 {
-  color: var(--prim);
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  border: none;
+
+  flex: 0 1 10%; /* Allow each container to grow/shrink, but set max height to 30% */
+  max-height: 10%;
+  margin-bottom: 10px; 
 }
 
-.card-item .date {
-  font-size: 1rem;
-  color: var(--seco);
-  font-style: italic;
-}
-
-.card-item ul {
+.card ul {
+  margin-left: 20px;
   list-style-type: disc;
-  padding-left: 20px;
 }
 
-.card-item ul li {
+.card ul li{
   color: var(--dark);
   margin-bottom: 8px;
   line-height: 1.5;
 }
+
+.card-details{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0%;
+  
+  flex: 0 1 5%; /* Allow each container to grow/shrink, but set max height to 30% */
+  max-height: 5%;
+  margin-bottom: 10px; /* Optional: space between containers */
+}
+
+.card-details .date{
+  color: var(--seco);
+  font-style: italic;
+}
+
+.card-imp{
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: stretch; /* Make sure the child containers stretch to the full width */
+}
+

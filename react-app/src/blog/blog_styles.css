@@ -1,15 +1,17 @@
+
 .blog-wrap{
     display: flex;
     flex-direction: column; 
     justify-content:space-evenly;
 }
 
-.blog-wrap h3{
-    border-radius: 10px;
-    border-style: dotted;
-    border-color: var(--prim);
-    text-align: center;
-    color: var(--seco);
+.blog-title{
+  border-radius: 10px;
+  border-style: dotted;
+  border-color: var(--prim);
+  text-align: center;
+  color: var(--seco);
+
 }
 
 .blog-nav {
@@ -102,5 +104,4 @@
   margin-right: 5px; /* Space between tags */
   font-size: 0.9rem; /* Smaller font size for tags */
 }
-
 

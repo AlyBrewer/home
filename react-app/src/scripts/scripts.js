@@ -39,10 +39,7 @@ const BlogPost = ({ title, author, date, content, image, tags }) => {
             <h1 className="post-title">{title}</h1>
             <div className="post-meta">
                 <span className="post-author">By {author}</span>
-                <span className="post-date">{date}</span>
-            </div>
-            <div className="post-content">
-                {content}
+                <span className="post-date">Published {date}</span>
             </div>
             {tags && tags.length > 0 && (
                 <div className="post-tags">
@@ -53,6 +50,9 @@ const BlogPost = ({ title, author, date, content, image, tags }) => {
                     ))}
                 </div>
             )}
+            <div className="post-content">
+                {content}
+            </div>
         </article>
     );
 };
