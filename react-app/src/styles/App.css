@@ -38,9 +38,21 @@ body::-webkit-scrollbar-thumb{
 }
 
 main {
-  flex: 1; /* This allows the main content area to grow and push the footer down */
+  flex: 1; /* This allows the main content area to push the footer down */
   padding: 20px;
   background-color: var(--back);
+}
+
+main h1{
+  display: inline-block; 
+  padding: 5px;
+  border-radius: 10px;
+  border-style: dotted;
+  border-color: var(--prim);
+}
+
+main p{
+  margin-bottom: 30px;
 }
 
 .header {
@@ -61,7 +73,6 @@ main {
   align-items: center;
 }
 
-/* Ensure padding and border are included in width calculations */
 .nav-button,
 .dropdown-content {
   box-sizing: border-box;
@@ -175,6 +186,7 @@ main {
   padding-bottom: 10px;
 }
 
+/* Formatting for resume stuff */
 .card-item {
   margin-bottom: 20px;
 }

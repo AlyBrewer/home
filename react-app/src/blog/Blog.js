@@ -6,6 +6,7 @@ import './blog_styles.css';
 
 const Blog = () => (
     <main className="main">
+        <h1>My Blog!</h1>
         <div className='blog-wrap'>
             <nav className="blog-nav">
                 <h3>Topics</h3>

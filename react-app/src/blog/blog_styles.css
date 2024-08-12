@@ -1,6 +1,6 @@
 .blog-wrap{
     display: flex;
-    flex-direction: column; /* Use column to align items vertically */
+    flex-direction: column; 
     justify-content:space-evenly;
 }
 
@@ -14,7 +14,7 @@
 
 .blog-nav {
     display: flex;
-    flex-direction: column; /* Use column to align items vertically */
+    flex-direction: column; 
     justify-content:space-evenly;
     height: 45vh;
     max-width: 15%;
