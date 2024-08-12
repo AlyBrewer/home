@@ -38,3 +38,69 @@
     background-color: var(--seco);
     color: var(--back);
   }
+
+  /* Blog Post Styles */
+.post {
+  background-color: var(--back); /* White background for the blog post */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 800px; /* Maximum width of the blog post */
+  margin-left: auto; /* Centering the blog post */
+  margin-right: auto; /* Centering the blog post */
+  align-items: center;
+  align-content: center;
+}
+
+.post-image {
+  width: 100%; /* Image takes full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.post-title {
+  
+  font-size: 2rem; /* Large title font size */
+  margin-bottom: 10px; /* Space below the title */
+  color: var(--seco); /* Dark text color */
+  border-radius: 10px;
+  border-style: dotted;
+  border-color: var(--prim);
+}
+
+.post-meta {
+  font-size: 0.9rem; /* Smaller font size for meta information */
+  color: var(--dark); /* Grey color for meta information */
+  margin-bottom: 20px; /* Space below meta information */
+}
+
+.post-author {
+  font-weight: bold; /* Bold text for author */
+}
+
+.post-date {
+  margin-left: 10px; /* Space between author and date */
+}
+
+.post-content {
+  font-size: 1rem; /* Standard font size for content */
+  line-height: 1.6; /* Increase line height for readability */
+  color: var(--dark); /* Dark text color */
+}
+
+.post-tags {
+  margin-top: 20px; /* Space above tags */
+}
+
+.tag {
+  display: inline-block; /* Tags as inline blocks */
+  background-color: var(--back); /* Light grey background */
+  color: var(--dark); /* Dark text color */
+  padding: 5px 10px; /* Padding around the tag text */
+  border-radius: 4px; /* Rounded corners for tags */
+  margin-right: 5px; /* Space between tags */
+  font-size: 0.9rem; /* Smaller font size for tags */
+}
+
+

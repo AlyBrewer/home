@@ -1,0 +1,20 @@
+import { OpenInNewTab, BlogPost } from './scripts/scripts';
+
+// Example usage in a component
+const App = () => {
+    return (
+        <div>
+            <OpenInNewTab href="https://example.com">Open Example in New Tab</OpenInNewTab>
+            <BlogPost
+                title="Exciting Blog Post"
+                author="Jane Doe"
+                date="August 15, 2024"
+                content={<p>This is the content of the blog post.</p>}
+                image="https://via.placeholder.com/800x400"
+                tags={['Technology', 'React']}
+            />
+        </div>
+    );
+};
+
+export default App;

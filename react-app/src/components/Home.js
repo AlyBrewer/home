@@ -1,7 +1,7 @@
 // src/components/Home.js
 import React from 'react';
 import '../styles/App.css';
-import OpenInNewTab from '../scripts/scripts.js';
+import {OpenInNewTab} from '../scripts/scripts.js';
 
 const Home = () => (
     <main className="main">

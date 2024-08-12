@@ -6,6 +6,7 @@
   --prim: #AEA434;
   --seco: #ED583F;
   --back: #EDDBC2;
+  --dark: #391212
 }
 
 html, body {
@@ -41,6 +42,7 @@ main {
   flex: 1; /* This allows the main content area to push the footer down */
   padding: 20px;
   background-color: var(--back);
+  color: var(--dark);
 }
 
 main h1{
@@ -212,7 +214,7 @@ main p{
 }
 
 .card-item ul li {
-  color: #333;
+  color: var(--dark);
   margin-bottom: 8px;
   line-height: 1.5;
 }
