@@ -71,7 +71,6 @@ const About = () => (
                             </ul>
                 </div>
             </div>
-        <p>If you want to learn more about me, you can download a PDF version of my resume: <a href="https://github.com/alybrewer/Portfolio/src/main/yourfile.pdf" download="YourFileName.pdf">here</a></p>
     </main>
 );
 
