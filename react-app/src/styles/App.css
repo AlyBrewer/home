@@ -270,3 +270,30 @@ main p{
   align-items: stretch; /* Make sure the child containers stretch to the full width */
 }
 
+.colu{
+  display: flex;
+  flex-direction: row; /* Stack items vertically */
+  justify-content: space-between; /* Center items vertically */
+  margin-right: 7%;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.social-links a {
+  color: var(--dark); 
+  font-size: 32px; /* Icon size */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.social-links a:hover {
+  color: var(--seco); 
+}
+
+.social-links a:nth-child(2):hover {
+  color: var(--seco); 
+}

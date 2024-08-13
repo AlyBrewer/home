@@ -1,8 +1,8 @@
 /* src/components/ContactForm.css */
 
 .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+    width: 40%;
+    margin-bottom: 10%;
     padding: 20px;
     background-color: var(--prim);
     border-radius: 8px;

@@ -10,7 +10,7 @@ const About = () => (
         <p>&ensp; &ensp; My name is Alyssa! Im currently a fourth-year Computer Engineering student at Purdue University, where  I 
            am involved with organizations such as Purdue Space Day and GEARE. I am also a pathways intern at NASA's Glenn Research 
            Center! Here I assist as a member of the software development team working on NASA's High Rate Delay Tolerant Networking 
-           project. Here's a bit more about me:
+           project.
         </p>
         <p> Here's a bit more about me: </p>
         <div className="card">
@@ -71,6 +71,7 @@ const About = () => (
                             </ul>
                 </div>
             </div>
+        <p>If you want to learn more about me, you can download a PDF version of my resume: <a href="https://github.com/alybrewer/Portfolio/src/main/yourfile.pdf" download="YourFileName.pdf">here</a></p>
     </main>
 );
 
