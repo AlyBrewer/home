@@ -48,6 +48,7 @@ main {
 
 main h1{
   display:inherit; 
+  text-align: center;
   border-color: var(--prim);
   margin: 0;
   padding: 0;
@@ -192,11 +193,23 @@ main p{
 }
 
 .footer {
+  display:flex;
+  justify-content: space-between;
   background-color: var(--prim);
   color: var(--back);
   text-align: left;
-  padding: 10px;
+  padding: 1%;
+  padding-right: 2%;
 }
+
+.home-nav {
+  display: flex;
+  flex-direction: column; 
+  justify-content:space-evenly;
+  gap: 15px;
+  max-width: 15%;
+}
+
 
 /* Formatting for resume stuff */
 .card {
@@ -279,8 +292,8 @@ main p{
 
 .social-links {
   display: flex;
-  flex-direction: column;
-  gap: 5%;
+  flex-direction: row;
+  gap: 20%;
 }
 
 .social-links a {

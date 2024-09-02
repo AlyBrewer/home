@@ -1,0 +1,43 @@
+/* src/styles/Gallery.css */
+
+.gallery-container {
+    padding: 16px;
+    margin-right: 5%;
+}
+  
+.filter {
+    margin-bottom: 16px;
+}
+  
+.filter label {
+    margin-right: 8px;
+}
+  
+.filter select {
+    padding: 4px 8px;
+}
+  
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 16px; /* Space between items */
+  }
+  
+.gallery-item {
+    overflow: hidden; /* Optional: Hide overflow */
+}
+  
+.gallery-item img {
+    width: 100%; /* Full width of the item */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+    border-radius: 20px;
+  }
+  
+.gallery-item p {
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+  
