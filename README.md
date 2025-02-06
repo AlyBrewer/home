@@ -5,3 +5,6 @@ Current features:
 * Navigation 
 * CSS animations and custom scroll bar 😎
 * More coming!!
+
+
+NOTE: BIG UPDATES COMING SOON!
